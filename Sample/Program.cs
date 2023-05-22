@@ -13,13 +13,14 @@ namespace Sample
             {
                 com = s;
             }
+          
             Console.WriteLine("Port: " + com);
 
-            int baudRate = 115200;
+            int baudRate = 9600;
 
             var portn = com;
             display.Init(portn, baudRate);
-            Thread.Sleep(500);
+            Thread.Sleep(2500);
             ts.SwitchScreenRequest += Screen1_SwitchScreenRequest;
             ms.SwitchScreenRequest += Ms_SwitchScreenRequest;
             display.SetScreen(ts);

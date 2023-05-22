@@ -6,7 +6,7 @@ namespace Sample
     {
         public void ButtonPressed(int index)
         {
-            if (index == 3)
+            if (index == 2)
             {
                 InvokeSwitchScreenRequest(0);
             }
@@ -29,7 +29,7 @@ namespace Sample
                 value -= step;
                 Update();
             }
-            else if (obj == 2)
+            else if (obj == 3)
             {
                 if (step == 1)
                 {
